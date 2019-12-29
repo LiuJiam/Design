@@ -95,18 +95,18 @@ def Modlenet(images, batch_size, n_classes):
             #drop_out = tf.nn.dropout(local3, 0.8)
     
     # fc
-    with tf.variable_scope('local4') as scope:
-        weights = tf.Variable(tf.truncated_normal(shape=[256, 256], stddev=0.005, dtype=tf.float32),
-                              name='weights', dtype=tf.float32)
+    #with tf.variable_scope('local4') as scope:
+       # weights = tf.Variable(tf.truncated_normal(shape=[256, 256], stddev=0.005, dtype=tf.float32),
+                              #name='weights', dtype=tf.float32)
 
-        biases = tf.Variable(tf.constant(value=0.1, dtype=tf.float32, shape=[256]),
-                             name='biases', dtype=tf.float32)
+        #biases = tf.Variable(tf.constant(value=0.1, dtype=tf.float32, shape=[256]),
+                             #name='biases', dtype=tf.float32)
 
-        local4 = tf.nn.relu(tf.matmul(local3, weights) + biases, name='local4')
+        #local4 = tf.nn.relu(tf.matmul(local3, weights) + biases, name='local4')
 
      #dropout
-        with tf.variable_scope('dropout') as scope:
-            drop_out = tf.nn.dropout(local4, 0.8)
+        #with tf.variable_scope('dropout') as scope:
+            #drop_out = tf.nn.dropout(local4, 0.8)
    
 
     # Softmax
