@@ -5,3 +5,6 @@ then we will upload some data samples, including uncut images.
 
 Feature map visualization
 ![Image text](https://raw.githubusercontent.com/LiuJiam/Design/master/Feature%20map%20visualization/03.png)
+
+
+![Image text](https://raw.githubusercontent.com/LiuJiam/Design/master/Feature%20map%20visualization/06.png)
